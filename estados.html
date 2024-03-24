@@ -1,0 +1,106 @@
+<html>
+
+<head>
+	<title>Statle</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+	<link rel="icon" href="img/icone-brasil.png">
+</head>
+
+<body id="fundo"onload="shuffleArray(images), mostrarUsuario();">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">Statle</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="menu.html">Menu</a>
+			</div>
+		</div>
+	</nav>
+	<br>
+
+	<div id="perfil-nome">
+        <h3 id="logado" style="color: black; font-family: Righteous;"></h3>
+    </div>
+	
+
+	<div class="container">
+        <h4 id="titulo" style="text-align: center; color: black;"></h4>
+		<div id="centro">
+        <div id="centro-mapa">
+            <img id="image-display" class="mapa"> 
+        </div>
+		</div>
+		<form id="formularioDados" action="" method="post">
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="cpf">Estado</label>
+					<input class="form-control" id="estado" name="estado" value="" type="text">
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+					<button type="button" id="btnPalpitar" class="btn btn-dark float-right" onclick="cadastrar()">Palpitar</button>
+				</div>
+			</div>
+		</form>
+
+        <table id="tabelaDados" class="table table-dark table-striped" style="margin-top: 5vh;">
+			<thead>
+				<tr>
+					<th>Estado</th>
+					<th>Resultado</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+        <div id="resultado-vitoria" style="margin-top: 5vh;">
+            <div class="alert alert-success" role="alert">
+                <h3 class="alert-heading">Parabéns!</h3>
+                <p style="text-align: center;">Muito bem! Você conseguiu acertar o formato de todos os estados do Brasil. Sinta-se preparado para enfrentar o modo Rank.</p>
+                <hr>
+                <div class="centro" style="display: grid; justify-content: center;">
+                    <a href="menu.html"><button id="button-inicio" class="btn btn-dark float-right">Menu Principal</button></a>
+                </div>
+                
+              </div>
+        </div>
+
+		<div id="resultado-derrota" style="margin-top: 5vh;">
+            <div class="alert alert-danger" role="alert">
+                <h3 class="alert-heading">Poxa!</h3>
+                <p style="text-align: center;">Foi quase! A resposta correta era: <span id="resposta-correta" style="font-weight: bold;"></span>. Tente novamente.</p>
+                <hr>
+                <div class="centro" style="display: grid; justify-content: center;">
+                    <a href="menu.html"><button id="button-inicio" class="btn btn-dark float-right">Menu Principal</button></a>
+                </div>
+                
+              </div>
+        </div>
+
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+	<script type="text/javascript" src="js/statle.js"></script>
+</body>
+
+</html>
