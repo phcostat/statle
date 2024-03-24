@@ -1,0 +1,82 @@
+
+.error {
+	color: red;
+	font-size: 14px; 
+}
+
+label {
+    color: white;
+}
+
+#container {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	margin-left: 15vh;
+	margin-right: 15vh;
+	height: 90%;
+}
+
+body {
+    background-image: url(https://matriculas.estacio.br/blog/wp-content/uploads/2020/08/68est-geografia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login {
+    background-color: rgba(48, 48, 41,0.8);
+    height: auto;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#conteudo-login {
+    margin: 5vh;
+    display: grid;
+}
+
+.center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset label{
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #2f586b;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #2f586b;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #2f586b;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }

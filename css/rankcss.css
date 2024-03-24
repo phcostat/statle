@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/*RANK*/
+  
+
+.error {
+	color: red;
+	font-size: 14px; 
+}
+
+#centro-mapa {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 520px;
+	width: 520px;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: black;
+	border-radius: 20px;
+}
+
+#centro {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+#fundo {
+	background-color: rgb(255, 244, 231);
+    background-image: url(https://2.bp.blogspot.com/-vEj-G9pgXKY/XsBF8K-lmGI/AAAAAAACShY/uSyYT32lvr48sYc9T4oPT11cCRuessxJwCLcBGAsYHQ/s1600/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    display: none;
+	
+}
+
+.icon {
+    width: 20px; 
+    height: 20px; 
+}
+
+#texto {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+#texto h1,h3 {
+	text-align: center;
+}
+
+.mapa {
+	height: 500px;
+	width: 500px;
+}
+ 
+#resultado-vitoria {
+	display: none;
+}
+
+#resultado-derrota {
+	display: none;
+}
+
+a {
+    display: grid;
+    text-decoration: none;
+}
+
+#logado {
+    text-align: center;
+}
+
+#inicio {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    grid-gap: 5px;
+}
+
+#inicioRank {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+
+
+#button-inicio, #inicioJogo {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #000000;
+  }
+  
+#button-inicio:hover, #inicioJogo:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #000000;
+  }
+  
+#button-inicio:active, #inicioJogo:active {
+    transform: scale(0.9);
+  }
+
+#button-busca {
+    background-color: #212529;
+    color: white;
+    font-size: Righteous;
+}
+
+#busca {
+    background-color: #212529;
+    color: white;
+
+}

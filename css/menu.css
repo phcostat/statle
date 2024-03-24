@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    background-image: url(https://matriculas.estacio.br/blog/wp-content/uploads/2020/08/68est-geografia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#container {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: bisque;
+	margin-left: 15vh;
+	margin-right: 15vh;
+	height: 90%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "perfil perfil"
+                         "statle rankeada";
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil {
+    grid-area: perfil;
+    border: 2px solid black;
+    height: 15vh;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas: "perfil-foto perfil-nome";
+    box-shadow: 50px;
+}
+
+#perfil-foto {
+    grid-area: perfil-foto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0 0 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-perfil {
+    height: 90px;
+    width: 90px;
+}
+
+#perfil-nome {
+    grid-area: perfil-nome;
+    background: linear-gradient(135deg, rgb(29, 29, 77), rgb(5, 0, 25));
+    border-radius: 0 20px 20px 0;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+}
+
+#statle {
+    grid-area: statle;
+    height: 65vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aquamarine;
+    transition: 2s;
+    background-image: url(https://i.imgur.com/B2mcpAQ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#statle:hover {
+    height: 70vh;
+    width: 35vw;
+    transition: 2s;
+}
+
+#rankeada {
+    grid-area: rankeada;
+    height: 65vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(24, 22, 22);
+    transition: 2s;
+    background-image: url(https://i.imgur.com/ZiO8Ab3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#rankeada:hover {
+    height: 70vh;
+    width: 35vw;
+    transition: 2s;
+}
